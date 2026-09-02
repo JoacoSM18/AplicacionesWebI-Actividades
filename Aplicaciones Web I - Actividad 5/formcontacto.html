@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html" aria-label="Vinculo al Inicio">
+            <img src="./recursos/imagenes/pexels-vanessa-loring-5965952.jpg" alt="Imagen de Alimentos Variados">
+        </a>
+        <nav>
+            <a href="./index.html">
+                Inicio - ¿Quien Soy?/Servicios
+            </a>
+            <a href="./formcontacto.html">
+                Formulario de Contacto
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Lic. Valentina Rosso — Nutrición y Bienestar
+        </h1>
+        <h2>
+            ¿Querés dar el primer paso hacia una alimentación más saludable? Completá el siguiente formulario contándome un poco sobre vos y me pondré en contacto a la brevedad para coordinar tu primera consulta.
+        </h2>
+        <form action="./formcontacto.html" method="post">
+            <label for="id_nombrecompleto">
+                Nombre Completo
+            </label>
+            <input type="text" name="nombrecompleto" id="id_nombrecompleto">
+            <label for="id_email">
+                Email
+            </label>
+            <input type="email" name="email" id="id_email">
+            <label for="id_telefono">
+                Telefono
+            </label>
+            <input type="text" name="telefono" id="id_telefono">
+            <label for="id_edad">
+                Edad
+            </label>
+            <input type="text" name="edad" id="id_edad">
+            <select name="motivoconsulta" id="id_motivoconsulta">
+                <option value="perro">
+                    Perro
+                </option>
+                <option value="gato">
+                    Gato
+                </option>
+                <option value="ave">
+                    Ave
+                </option>
+            </select>
+            <label for="id_comentario">Comentario</label>
+            <textarea name="comentario" id="id_comentario">
+            </textarea>
+            <button type="reset">
+                Limpiar
+            </button>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            Informacion de Contacto Rápido
+        </p>
+        <ul>
+            <li>
+                <a href="https://instagram.com/nutri.vale_rosso10">
+                    @nutri.vale_rosso10
+                </a>
+            </li>
+            <li>
+                Telefono: 3515123456
+            </li>
+            <li>
+                Email: valerosso@gmail.com
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
