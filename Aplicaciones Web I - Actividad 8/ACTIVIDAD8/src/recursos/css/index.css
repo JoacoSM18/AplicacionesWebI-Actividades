@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+}
+
+.encabezado-principal {
+    background-color: rgb(224, 141, 102);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-principal {
+    background-color: blanchedalmond;
+}   
+
+.pie-principal {
+    background-color: rgb(224, 141, 102);
+}
