@@ -1,50 +1,46 @@
 //1A
-function saludar (){
-	console.log ('¡Hola, bienvenido!')
+function saludar() {
+  console.log('¡Hola, bienvenido!');
 }
-saludar()
+saludar();
 
 //B
-function saludarPersona(nombre){
-  console.log(`¡Hola ${nombre}, bienvenido!`);
+function saludarPersona(nombre) {
+  console.log('¡Hola ' + nombre + ', bienvenido!');
 }
-saludarPersona("Joaco");
+saludarPersona('Joaco');
 
 //C
-function esMayorDeEdad(edad){
+function esMayorDeEdad(edad) {
   if (edad >= 18) {
     return true;
-  } 
-  else {
+  } else {
     return false;
   }
 }
-const resultadoC = esMayorDeEdad(20);
-console.log(resultadoC);
+const resultado1 = esMayorDeEdad(20);
+console.log(resultado1);
 
 //2A
-const esMayorDeEdad = (edad) => {
+const esMayorDeEdadFlecha = (edad) => {
   if (edad >= 18) {
     return true;
-  } 
-  else {
+  } else {
     return false;
   }
 };
-const resultadoA = esMayorDeEdad(15);
-console.log(resultadoA);
+const resultado2 = esMayorDeEdadFlecha(15);
+console.log(resultado2);
 
 //B
 const compararNumeros = (num1, num2) => {
   if (num1 < num2) {
-    console.log(`El número ${num1} es menor que ${num2}`);
-  } 
-    else if (num1 === num2) {
-    console.log(`El número ${num1} es igual que ${num2}`);
-    } 
-    else {
-        console.log(`El número ${num1} es mayor que ${num2}`);
-    }
+    console.log('El número ' + num1 + ' es menor que ' + num2);
+  } else if (num1 === num2) {
+    console.log('El número ' + num1 + ' es igual que ' + num2);
+  } else {
+    console.log('El número ' + num1 + ' es mayor que ' + num2);
+  }
 };
 for (let i = 0; i <= 10; i++) {
   compararNumeros(i, 5);
@@ -52,10 +48,10 @@ for (let i = 0; i <= 10; i++) {
 
 //3A
 const suma = (a, b) => {
-  console.log(`El resultado de la suma es ${a + b}`);
+  console.log('El resultado de la suma es ' + (a + b));
 };
 const resta = (a, b) => {
-  console.log(`El resultado de la resta es ${a - b}`);
+  console.log('El resultado de la resta es ' + (a - b));
 };
 const operacion = (num1, num2, callback) => {
   callback(num1, num2);
@@ -64,12 +60,12 @@ operacion(8, 3, suma);
 operacion(8, 3, resta);
 
 //B
-const operacion2 = (num1, num2, callback) => {
-  if (typeof num1 !== "number" || typeof num2 !== "number") {
-    console.log("Debe Ingresar Solo Números.");
+const operacionValidada = (num1, num2, callback) => {
+  if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+    console.log('Debe ingresar solo números.');
     return;
   }
   callback(num1, num2);
 };
-operacion2(8, 3, suma); 
-operacion2("a", 3, resta);
+operacionValidada(8, 3, suma);
+operacionValidada('a', 3, resta);
